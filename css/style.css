@@ -1,0 +1,280 @@
+body {
+	background-image: url("../img/bg.png");
+	font-family: sans-serif;
+	text-align : center;
+	margin: 0 auto;
+	margin-top: 40px;
+}
+
+#level_title {
+	font-size: 23px;
+	color: white;		
+	margin-bottom: 8px;
+}
+
+#level_title_game_over {
+	font-size: 23px;
+	color: red;		
+	margin-bottom: 8px;
+	visibility: visible;
+	z-index: -1;
+}
+
+nav{
+	margin: 0 auto;
+}
+
+#level_image {
+	border: 3px;
+	border-style: solid;
+	border-color: white;
+	height: 400px;
+}
+
+#path {
+	margin: 0 auto;
+}
+
+div.container{
+	margin-top: 10px;
+}
+
+#path span{
+	cursor: pointer;
+}
+
+button {
+    background-color: #BDBDBD;
+    border-radius: 5px;
+    border: 2px solid;
+    border-color: white;
+    padding: 8px 12px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-color: white;
+    text-decoration: bold;
+}
+
+button:hover{
+	border-color: orange;
+	cursor: pointer;
+}
+
+button.sleutel:active{
+	border-color: red;
+}
+
+.box {
+  width: 20%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 35px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid orange;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: orange;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 5s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: orange;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+#snow{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), 
+					  url('http://www.wearewebstars.dk/codepen/img//s2.png'), 
+					  url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:-1;
+	-webkit-animation: snow 10s linear infinite;
+	-moz-animation: snow 10s linear infinite;
+	-ms-animation: snow 10s linear infinite;
+	animation: snow 10s linear infinite;
+}
+@keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snow {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+
+#snoweaster{
+	background: none;
+	font-family: Androgyne;
+	background-image: url('http://www.wearewebstars.dk/codepen/img/s1.png'), 
+					  url('http://www.wearewebstars.dk/codepen/img//s2.png'), 
+					  url('http://www.wearewebstars.dk/codepen/img//s3.png');
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index:-1;
+	-webkit-animation: snow 1s linear infinite;
+	-moz-animation: snow 1s linear infinite;
+	-ms-animation: snow 1s linear infinite;
+	animation: snow 1s linear infinite;
+}
+@keyframes snoweaster {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-moz-keyframes snoweaster {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+}
+@-webkit-keyframes snoweaster {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}
+@-ms-keyframes snoweaster {
+  0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+  50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+  100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+}	
+
+
+
+/* Now the same background, but with brightness filters*/
+div.lightning{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('../img/bg.png');
+  background-position: center center;
+  background-origin: content-box;
+  background-size: cover;
+  background-attachment: fixed;
+  -webkit-filter: brightness(3);
+  filter: brightness(3);
+  -o-filter: brightness(3);
+  -moz-filter: brightness(3);
+  z-index: -100000000;
+}
+
+/*Now just a opacity animation*/
+div.flashit{
+-webkit-animation: flash ease-out 7s infinite;
+-moz-animation: flash ease-out 7s infinite;
+animation: flash ease-out 7s infinite;
+animation-delay: 0s;
+}
+
+@-webkit-keyframes flash {
+	from { opacity: 0; } 
+  92% { opacity: 0; }
+	93% { opacity: 0.6; }
+  94% { opacity: 0.2; }
+  96% { opacity: 0.9; } 
+	to { opacity: 0; }
+}
+
+@keyframes flash {
+	from { opacity: 0; } 
+    92% { opacity: 0; }
+	93% { opacity: 0.6; }
+    94% { opacity: 0.2; }
+    96% { opacity: 1; } 
+	to { opacity: 0; }
+}
+/*End! is that simple! */
+
+.unmute{
+  background-image: url(../img/unmute.png);
+  background-size: cover;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  margin-left: 530px;
+  z-index: 100px;
+  position:relative;
+  margin-top: -70px;
+  }
+
+.mute{
+  background-image: url(../img/mute.png);
+  }
